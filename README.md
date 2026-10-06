@@ -510,7 +510,7 @@ Prediction result generated through the deployed EcoVision AI application.
 ```text
 screenshots/
 ├── accuracy_graph.png
-├── classifiation_report.png
+├── classification_report.png
 ├── colab_prediction.png
 ├── confusion_matrix.png
 ├── dataset_distribution.png
