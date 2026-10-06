@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>EcoVision AI | Waste Classification</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">♻</span>
+            <span>EcoVision AI</span>
+        </div>
+
+        <div class="ai-badge">
+            AI Powered
+        </div>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    INTELLIGENT WASTE CLASSIFICATION
+                </div>
+
+                <h1>
+                    Understand Your Waste
+                    <span>With AI.</span>
+                </h1>
+
+                <p>
+                    Upload an image and let our AI model identify
+                    the type of waste using deep learning.
+                </p>
+
+            </div>
+
+
+            <!-- UPLOAD CARD -->
+
+            <div class="upload-card">
+
+                <div
+                    class="drop-zone"
+                    id="dropZone"
+                >
+
+                    <div class="upload-icon">
+                        ↑
+                    </div>
+
+                    <h2>
+                        Upload an Image
+                    </h2>
+
+                    <p>
+                        Drag & drop your image here
+                    </p>
+
+                    <p class="or">
+                        or
+                    </p>
+
+                    <label
+                        for="imageInput"
+                        class="browse-btn"
+                    >
+                        Browse Image
+                    </label>
+
+                    <input
+                        type="file"
+                        id="imageInput"
+                        accept="image/*"
+                        hidden
+                    >
+
+                    <p class="file-info">
+                        JPG, JPEG or PNG
+                    </p>
+
+                </div>
+
+
+                <!-- IMAGE PREVIEW -->
+
+                <div
+                    class="preview-section"
+                    id="previewSection"
+                >
+
+                    <img
+                        id="imagePreview"
+                        src=""
+                        alt="Selected image"
+                    >
+
+                    <div class="file-name">
+                        <span id="fileName"></span>
+                    </div>
+
+                    <button
+                        id="analyzeBtn"
+                        class="analyze-btn"
+                    >
+                        Analyze Image
+                    </button>
+
+                </div>
+
+
+                <!-- LOADING -->
+
+                <div
+                    class="loading-section"
+                    id="loadingSection"
+                >
+
+                    <div class="loader"></div>
+
+                    <h3>
+                        AI is analyzing your image...
+                    </h3>
+
+                    <p>
+                        Please wait while EcoVision AI processes
+                        the image.
+                    </p>
+
+                </div>
+
+
+                <!-- RESULT -->
+
+                <div
+                    class="result-section"
+                    id="resultSection"
+                >
+
+                    <div class="result-header">
+
+                        <span class="success-icon">
+                            ✓
+                        </span>
+
+                        <div>
+                            <h2>
+                                Classification Result
+                            </h2>
+
+                            <p>
+                                AI analysis completed
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="prediction-card">
+
+                        <p class="result-label">
+                            DETECTED WASTE
+                        </p>
+
+                        <h2 id="prediction">
+                            Plastic
+                        </h2>
+
+                        <div class="confidence-container">
+
+                            <div class="confidence-header">
+
+                                <span>
+                                    Confidence
+                                </span>
+
+                                <strong id="confidence">
+                                    0%
+                                </strong>
+
+                            </div>
+
+                            <div class="confidence-bar">
+
+                                <div
+                                    class="confidence-fill"
+                                    id="confidenceFill"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TOP 3 -->
+
+                    <div class="top-results">
+
+                        <h3>
+                            Top Predictions
+                        </h3>
+
+                        <div id="topPredictions"></div>
+
+                    </div>
+
+
+                    <!-- WARNING -->
+
+                    <div
+                        class="warning"
+                        id="warning"
+                    >
+                        The model has low confidence in this
+                        prediction. Consider uploading a clearer
+                        image.
+                    </div>
+
+
+                    <button
+                        class="reset-btn"
+                        id="resetBtn"
+                    >
+                        Analyze Another Image
+                    </button>
+
+                </div>
+
+
+                <!-- ERROR -->
+
+                <div
+                    class="error-section"
+                    id="errorSection"
+                >
+
+                    <div class="error-icon">
+                        !
+                    </div>
+
+                    <h3>
+                        Unable to Analyze Image
+                    </h3>
+
+                    <p id="errorMessage">
+                        Something went wrong.
+                    </p>
+
+                    <button
+                        class="reset-btn"
+                        id="errorResetBtn"
+                    >
+                        Try Again
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFORMATION -->
+
+        <section class="info-section">
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    🧠
+                </div>
+
+                <h3>
+                    Deep Learning
+                </h3>
+
+                <p>
+                    Powered by EfficientNet-B0 transfer learning.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    ♻
+                </div>
+
+                <h3>
+                    9 Waste Categories
+                </h3>
+
+                <p>
+                    Classifies real-world waste into multiple
+                    categories.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    ⚡
+                </div>
+
+                <h3>
+                    AI Prediction
+                </h3>
+
+                <p>
+                    Get predictions and confidence scores instantly.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            EcoVision AI · Intelligent Waste Classification
+        </p>
+
+        <p>
+            Built with PyTorch + FastAPI
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
