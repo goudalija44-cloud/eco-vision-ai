@@ -7,9 +7,7 @@ import io
 from inference import predict_image
 
 
-# =========================
 # CREATE FASTAPI APP
-# =========================
 
 app = FastAPI(
 
@@ -23,20 +21,16 @@ app = FastAPI(
     version="1.0.0"
 )
 
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://127.0.0.1:5500",
-        "http://localhost:5500"
-    ],
+    allow_origins=["*"],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# =========================
 # HOME
-# =========================
 
 @app.get("/")
 def home():
@@ -53,10 +47,8 @@ def home():
     }
 
 
-# =========================
-# HEALTH CHECK
-# =========================
 
+# HEALTH CHECK
 @app.get("/health")
 def health_check():
 
@@ -68,9 +60,8 @@ def health_check():
     }
 
 
-# =========================
+
 # MODEL INFO
-# =========================
 
 @app.get("/model-info")
 def model_info():
@@ -89,9 +80,7 @@ def model_info():
     }
 
 
-# =========================
 # IMAGE PREDICTION
-# =========================
 
 @app.post("/predict")
 async def predict(

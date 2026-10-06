@@ -1,16 +1,12 @@
-// ======================================
 // ECO VISION AI FRONTEND
-// ======================================
 
 
 // FastAPI backend
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://eco-vision-ai-api.onrender.com";
 
 
-// ======================================
 // ELEMENTS
-// ======================================
 
 const imageInput =
     document.getElementById("imageInput");
@@ -69,9 +65,9 @@ const errorResetBtn =
 let selectedFile = null;
 
 
-// ======================================
+
 // FILE SELECTION
-// ======================================
+
 
 imageInput.addEventListener(
     "change",
@@ -90,7 +86,7 @@ imageInput.addEventListener(
 );
 
 
-// ======================================
+
 // HANDLE FILE
 // ======================================
 
@@ -146,7 +142,7 @@ function handleFile(file) {
 }
 
 
-// ======================================
+
 // DRAG & DROP
 // ======================================
 
@@ -201,7 +197,7 @@ dropZone.addEventListener(
 );
 
 
-// ======================================
+
 // ANALYZE IMAGE
 // ======================================
 
@@ -289,7 +285,7 @@ async function analyzeImage() {
 }
 
 
-// ======================================
+
 // DISPLAY RESULT
 // ======================================
 
@@ -382,7 +378,6 @@ function displayResult(data) {
 }
 
 
-// ======================================
 // ERROR
 // ======================================
 
@@ -410,7 +405,7 @@ function showError(message) {
 }
 
 
-// ======================================
+
 // RESET
 // ======================================
 

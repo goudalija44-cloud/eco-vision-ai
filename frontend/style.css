@@ -12,9 +12,7 @@ body {
 }
 
 
-/* =========================
-   NAVBAR
-========================= */
+/* NAVBAR */
 
 .navbar {
     height: 72px;
@@ -55,9 +53,7 @@ body {
 }
 
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero {
     max-width: 1050px;
@@ -112,9 +108,7 @@ body {
 }
 
 
-/* =========================
-   UPLOAD CARD
-========================= */
+/* UPLOAD CARD */
 
 .upload-card {
     background: white;
@@ -132,9 +126,7 @@ body {
 }
 
 
-/* =========================
-   DROP ZONE
-========================= */
+/* DROP ZONE */
 
 .drop-zone {
     border: 2px dashed #cdd9d2;
@@ -217,9 +209,7 @@ body {
 }
 
 
-/* =========================
-   PREVIEW
-========================= */
+/* PREVIEW */
 
 .preview-section {
     display: none;
@@ -246,9 +236,7 @@ body {
 }
 
 
-/* =========================
-   BUTTON
-========================= */
+/* BUTTON */
 
 .analyze-btn,
 .reset-btn {
@@ -278,9 +266,7 @@ body {
 }
 
 
-/* =========================
-   LOADING
-========================= */
+/* LOADING */
 
 .loading-section {
     display: none;
@@ -321,9 +307,7 @@ body {
 }
 
 
-/* =========================
-   RESULT
-========================= */
+/* RESULT */
 
 .result-section {
     display: none;
@@ -369,9 +353,7 @@ body {
 }
 
 
-/* =========================
-   PREDICTION
-========================= */
+/* PREDICTION */
 
 .prediction-card {
     background: #f5faf7;
@@ -440,9 +422,7 @@ body {
 }
 
 
-/* =========================
-   TOP PREDICTIONS
-========================= */
+/* TOP PREDICTIONS */
 
 .top-results h3 {
     font-size: 17px;
@@ -477,9 +457,7 @@ body {
 }
 
 
-/* =========================
-   WARNING
-========================= */
+/* WARNING */
 
 .warning {
     display: none;
@@ -500,9 +478,7 @@ body {
 }
 
 
-/* =========================
-   RESET
-========================= */
+/* RESET */
 
 .reset-btn {
     width: 100%;
@@ -519,9 +495,7 @@ body {
 }
 
 
-/* =========================
-   ERROR
-========================= */
+/* ERROR */
 
 .error-section {
     display: none;
@@ -557,9 +531,7 @@ body {
 }
 
 
-/* =========================
-   INFO CARDS
-========================= */
+/* INFO CARDS */
 
 .info-section {
     max-width: 1050px;
@@ -605,9 +577,7 @@ body {
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
     background: #17201b;
@@ -624,9 +594,7 @@ footer {
 }
 
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* RESPONSIVE */
 
 @media (max-width: 700px) {
 
