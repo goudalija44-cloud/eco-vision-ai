@@ -12,15 +12,15 @@ Users can upload a waste image, and EcoVision AI analyzes the image and returns 
 
 ### 🌐 Web Application
 
-**EcoVision AI Website**
+**https://goudalija44-cloud.github.io/eco-vision-ai/**
 
 ### ⚡ FastAPI Backend
 
-**EcoVision AI API**
+**https://eco-vision-ai-api.onrender.com**
 
 ### 💻 GitHub Repository
 
-**Source Code**
+**goudalija44-cloud/eco-vision-ai**
 
 ---
 
