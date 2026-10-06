@@ -20,7 +20,7 @@ Users can upload a waste image, and EcoVision AI analyzes the image and returns 
 
 ### 💻 GitHub Repository
 
-**goudalija44-cloud/eco-vision-ai**
+**https://github.com/goudalija44-cloud/eco-vision-ai**
 
 ---
 
